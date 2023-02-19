@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'task5HelpApp' do
+pod 'SwiftLint'
+pod 'SnapKit'
+
+  # Pods for task5HelpApp
+end
