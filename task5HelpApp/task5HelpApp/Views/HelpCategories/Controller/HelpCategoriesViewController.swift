@@ -10,7 +10,7 @@ import UIKit
 final class HelpCategoriesViewController: UIViewController {
 
     // MARK: Properties
-    var setCell = [CellHelpCatCollectionStructure]()
+    var setCell: [Cathegory] = []
 
     // MARK: Private Properties
     private let viewModel: HelpCategoriesModel
@@ -70,7 +70,13 @@ final class HelpCategoriesViewController: UIViewController {
     }
 
     private func bindViewModel() {
-        setCell = viewModel.collectionsCellArray.collectionsCell
+        let queue = DispatchQueue.global(qos: .background)
+        queue.async {
+            self.setCell = self.viewModel.data
+            DispatchQueue.main.async {
+                self.helpCategoriesView.collectionView.reloadData()
+            }
+        }
     }
 }
 
@@ -95,15 +101,18 @@ extension HelpCategoriesViewController: UICollectionViewDataSource {
         return cell
     }
 
-    private func configure(cell: HelpCategoriesCollectionCell, with app: CellHelpCatCollectionStructure) {
+    private func configure(cell: HelpCategoriesCollectionCell, with app: Cathegory) {
         cell.label.text = app.title
-        cell.imageView.image = app.image
+        cell.imageView.image = UIImage(named: app.image)
     }
 }
 
 // MARK: UICollectionViewDelegate
 extension HelpCategoriesViewController: UICollectionViewDelegate {
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationController?.pushViewController(EventViewController(viewModel: EventViewModel(selectCathegoryID: 1)),
+                                                 animated: true)
+    }
 }
 
 // MARK: UICollectionViewDelegateFlowLayout

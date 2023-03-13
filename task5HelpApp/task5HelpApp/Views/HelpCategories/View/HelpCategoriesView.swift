@@ -49,12 +49,12 @@ final class HelpCategoriesView: UIView {
     }
 
     private func setupConstraints() {
-        let selfArea = self.safeAreaLayoutGuide
+        let safeArea = self.safeAreaLayoutGuide
         self.collectionView.snp.makeConstraints { make in
-            make.leading.equalTo(selfArea.snp.leading)
-            make.trailing.equalTo(selfArea.snp.trailing)
-            make.bottom.equalTo(selfArea.snp.bottom)
-            make.top.equalTo(selfArea.snp.top)
+            make.leading.equalTo(safeArea.snp.leading)
+            make.trailing.equalTo(safeArea.snp.trailing)
+            make.bottom.equalTo(safeArea.snp.bottom)
+            make.top.equalTo(safeArea.snp.top)
         }
     }
 }

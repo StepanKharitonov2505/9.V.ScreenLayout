@@ -60,4 +60,36 @@ public struct Constants {
         /// Image Name tab bar
             static let imageNameTabBarProfileController: String = "icon-grey-profile"
             static let imageNameSelectedTabBarProfileController: String = "icon-green-profile"
+    // MARK: Event Controller
+        /// Stumble
+            static let stumbleBetweenSections: CGFloat = 10
+            static let offsetImageFromBackground: CGFloat = 4
+            static let offsetBackgroungFromCell: CGFloat = 8
+        /// Filter Button
+            static let filterButtonImageName: String = "filter"
+        /// Cell
+            static let reuseIDEventCell: String = "reuseIDEventCell"
+        /// Separator between MainTtiel and Descritption
+            static let separatorNameEventCell: String = "separator"
+            static let offsetSeparatorFromMainTitle: CGFloat = 8
+        /// Description
+            static let offsetDescriptionFromSeparator: CGFloat = 8
+        /// Image Date on bottomView
+            static let dateDurationImageName: String = "dateDuration"
+        /// Main Title Label
+            static let heightLabelMainTitle: CGFloat = 46
+            static let widthLabelMainTitle: CGFloat = 267
+            static let offsetBottomMainTitleFromBottomImage: CGFloat = 35
+        /// Font size segmented control
+            static let fontSizeSegmentedControl: CGFloat = 13
+        /// Offset Segmented Control
+            static let offsetTopSegmentedControl: CGFloat = 10
+            static let offsetBottomSegmentedControl: CGFloat = -9.5
+            static let offsetTrailingLeadingSegmentedControl: CGFloat = 16
+        /// Relation
+            static let relationHeightImageOfHeightCell: CGFloat = 231/413
+            static let relationHeightShadowOfHeightImage: CGFloat = 141/231
+            static let relationHeightOfWidthEventCell: CGFloat = 413/375
+            static let relationHeightCellOfBottomView: CGFloat = 31/413
+            static let relationHeightOfWidthSegmentedView: CGFloat = 43/375
 }

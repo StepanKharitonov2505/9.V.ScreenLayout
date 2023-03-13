@@ -8,5 +8,8 @@
 import UIKit
 
 final class HelpCategoriesModel {
-    let collectionsCellArray = LoadingHelpCategoriesCollectionData()
+
+    lazy var data: [Cathegory] = {
+        return ModelData().cathegories
+    }()
 }

@@ -8,8 +8,9 @@ import UIKit
 
 public extension UIColor {
     // MARK: Screen Color
-        static let backgroundColorSplashScr = UIColor.rgb(239.0, 243.0, 246.0)
+        static let backgroundColorSplashScr = UIColor.rgb(239, 243, 246)
         static let backgroundColorHelpCategoriesScr = UIColor.rgb(255, 255, 255)
+        static let backgroundColorEventScreen = UIColor.rgb(232, 237, 237)
     // MARK: Color HelpCat Collection Cell
         static let backgroundColorHelpCategoriesCell = UIColor.rgb(234, 237, 232)
         static let helpCategoriesCellTextColor = UIColor.rgb(158, 191, 80)
@@ -20,6 +21,10 @@ public extension UIColor {
         static let selectedItemTabBarColor = UIColor.rgb(102, 166, 54)
         static let unselectedItemTabBarColor = UIColor.rgb(146, 146, 146)
         static let redColorMiddleButton = UIColor.rgb(254, 116, 96)
+    // MARK: EventView Color
+        static let eventViewBlueGrayColor = UIColor.rgb(98, 127, 143)
+        static let eventViewDarkSlateBlue = UIColor.rgb(22, 59, 79)
+        static let eventViewLightGreyColor = UIColor.rgb(232, 237, 237)
 }
 
 public extension UIColor {
