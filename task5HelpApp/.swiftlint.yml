@@ -2,6 +2,9 @@ excluded:
     - Carthage
     - Pods
     
+disabled_rules:
+    - function_body_length
+    
 identifier_name:
     max_length:
         warning: 45
